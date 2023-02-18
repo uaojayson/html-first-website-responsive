@@ -1,0 +1,465 @@
+* {
+    margin: 5;
+    padding: 10;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: #080808;
+    background-size: contain;
+    width: 100%;
+    color: #fff;
+  }
+
+  /* ------------header----------- */
+
+  #header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/UP_OBLE.webp);
+    background-size: cover;
+    opacity: 1;
+  }
+  .container {
+    padding: 10px 10%;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: rgb(14, 13, 13);
+  }
+
+  .top-header {
+    text-align: center;
+  }
+
+  .logo {
+    color: black;
+    margin: 0 110px;
+    font-family: "Roboto", sans-serif;
+    font-size: 80px;
+    letter-spacing: 10px;
+    opacity: 0.6;
+    padding-bottom: 1%;
+
+    background-image: linear-gradient(45deg, #6b1c1c, #0e7238, #661f1f, #fff, #000);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+
+  nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 3px 20px;
+    text-align: center;
+  }
+
+  nav ul li a {
+    color: #ce1b54;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    position: relative;
+    transition: 0.5s;
+
+    background-image: linear-gradient(45deg, #6b1c1c, #0e7238, #661f1f, #e9f0ed, #000);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+
+  }
+
+  nav ul li a:hover{
+    font-size: 30px;
+  }
+
+  nav ul li a::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background: green;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+
+  }
+
+  nav ul li a:hover::after {
+    width: 100%;
+
+  }
+
+
+  .header-text {
+    margin-top: 20%;
+    font-size: 30px;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+  }
+  .header-text p {
+    margin-left: 3%;
+    margin-bottom: 1%;
+    color: green;
+    font-weight: 1000;
+    font-size: 70px;
+
+    background-image: linear-gradient(45deg, #6b1c1c, #0e7238, #661f1f, #fff, #000);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+
+  }
+  .header-text h1 {
+    font-size: 50px;
+    margin-top: 10px;
+    margin-left: 3%;
+
+    
+  }
+
+  .header-text h1 span {
+    color: rgb(177, 3, 3);
+    font-size: 80px;
+
+    background-image: linear-gradient(45deg, #6b1c1c, #0e7238, #661f1f, #fff, #000);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+
+  }
+  .header-text h1 strong {
+    color: #fff;
+    font-size: 40px;
+  }
+
+  /* ------------ABOUT----------- */
+
+  #about {
+    padding: 80px 5;
+    color: #ababab;
+    
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .about-col-1 {
+    flex-basis: 50%;
+  }
+  .about-col-1 img {
+    margin-top: 7%;
+    width: 90%;
+    border-radius: 45px;
+  }
+  .about-col-2 {
+    flex-basis: 50%;
+    width: 80%;
+  }
+
+  .sub-title {
+    font-size: 70px;
+    font-weight: 600;
+    color: #c93060;
+    text-align: center;
+    margin-bottom: 1%;
+    font-family: "Roboto", sans-serif;
+
+    background-image: linear-gradient(45deg, #6b1c1c, #0e7238, #661f1f, #e9f0ed, #000);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    
+  }
+  .description{
+    text-align: justify;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 5%;
+    color: #fff;
+  }
+
+  .Profiles{
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+  }
+
+ 
+  .profile-tab{
+    color: #ce1b54;
+    text-align: left;
+    font-size: 20px;
+    text-decoration: solid;
+    margin-bottom: 1%;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+
+  .profile-tab:hover{
+    font-size: 40px;
+  }
+
+  ul li span{
+    color: #c93060;
+    font-size: 15px;
+  }
+  ul li{
+    font-size: 12px;
+  }
+  
+  /* ------------LEISURE ACTIVITIES----------- */
+
+  #hobbies{
+padding: 50px 0;
+
+}
+.hobby-list{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+grid-gap: 40px;
+margin-top: 50px;
+}
+.hobby{
+border-radius: 10px;
+position: relative;
+overflow: hidden;
+
+}
+.hobby img{
+width: 100%;
+border-radius: 10px;
+display: block;
+transition: transform 0.5s;
+}
+.layer{
+width: 100%;
+height: 0;
+background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+border-radius: 10px;
+position: absolute;
+left: 0;
+bottom: 0;
+overflow: hidden;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+padding: 0 40px;
+text-align: center;
+font-size: 14px;
+color: #fff;
+transition: height 0.5s;
+
+}
+
+.layer h3{
+font-weight: 500;
+margin-bottom: 20px;
+
+}
+
+.layer a{
+margin-top: 20px;
+color: #ff004f;
+text-decoration: none;
+font-size: 18px;
+line-height: 60px;
+background: #fff;
+width: 60px;
+height: 60px;
+border-radius: 50%;
+text-align: center;
+
+}
+.hobby:hover img{
+transform: scale(1.1);
+}
+
+.hobby:hover .layer{
+height: 100%;
+
+}
+
+.btn{
+display: block;
+margin: 50px auto;
+width: fit-content;
+border: 1px solid #11914a;
+padding: 14px 50px;
+border-radius: 6px;
+text-decoration: none;
+color: #d1a6b4;
+transition: 0.5s;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+
+}
+.btn:hover{
+border-color: #c93060;
+font-size: 20px;
+}
+
+/* ------------GALLERY----------- */
+
+#gallery {
+    padding: 80px 5;
+    color: #ababab;
+    
+  }
+
+  .gallery-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .gallery-col-2 {
+    flex-basis: 40%;
+  }
+  .gallery-col-2 img {
+    margin-top: 7%;
+    width: 90%;
+    border-radius: 45px;
+  }
+
+
+  .gallery-col-1 {
+    flex-basis: 55%;
+    width: 80%;
+  }
+
+  .subtitle {
+    font-size: 40px;
+    font-weight: 600;
+    color: #c93060;
+    text-align: center;
+    margin-bottom: 1%;
+    font-family: "Roboto", sans-serif;
+
+    background-image: linear-gradient(45deg, #6b1c1c, #0e7238, #661f1f, #e9f0ed, #000);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .desc{
+    text-align: justify;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 5%;
+    color: #fff;
+  }
+
+h2{
+text-align: center;
+color: #fff;
+}
+h3{
+text-align: center;
+color: #c93060;
+}
+
+
+.discover{
+display: block;
+margin: 50px auto;
+width: fit-content;
+border: 1px solid #11914a;
+padding: 14px 50px;
+border-radius: 20px;
+text-decoration: none;
+color: #d1a6b4;
+text-align: center;
+font-family: sans-serif;
+font-size: 15px;
+transition: 0.5s;
+}
+.discover:hover{
+font-size: larger;
+}
+
+/* ------------MEDIA----------- */
+
+@media only screen and (max-width: 600px){
+    #header{
+        background-image: url(images/PHONEBACKGROUND.jpg);
+    }
+    .header-text{
+        margin-top: 100%;
+        font-size: 15px;
+    }
+    .header-text h1{
+        font-size: 30px;
+
+    }
+    nav .fas{
+        display: block;
+        font-size: 25px;  
+        color: #fff;
+    }
+    nav ul{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .sub-title{
+        font-size: 40px;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;  
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-2{
+        font-size: 14px;
+    }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+    
+}
